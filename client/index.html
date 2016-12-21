@@ -4,12 +4,36 @@
   <head>
     <meta http-equiv="content-type"
       content="text/html; charset=utf-8">
+      <style type="text/css">
+        body {
+          margin: 2%;
+          font-size: 20px;
+        }
+
+        form {
+          width: 50%;
+        }
+
+        form label {
+          float: left;
+        }
+
+        form label span {
+          display: block;
+          min-width: 200px;
+        }
+
+      </style>
   </head>
 
   <body>
     <form name="interactiveForm">
-      <label for="yourName">Your name:
-        <input type="text" name="yourName" value="" />
+      <label for="selectedVoice"><span>Voices:</span>
+        <select name="voice" id="voiceSelect"></select>
+      </label>
+
+      <label for="yourName"><span>Your name:</span>
+        <input type="text" name="yourName" value="Stephen" />
       </label>
       <button type="button"
         onclick="doSomething()">Do Something</button>

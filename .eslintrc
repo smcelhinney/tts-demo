@@ -21,9 +21,12 @@
   },
   "globals": {
     "window": true,
+    "Option": true,
     "AudioContext": true,
     "XMLHttpRequest": true,
     "describe": true,
-    "it": true
+    "it": true,
+    "navigator": true,
+    "document": true
   }
 }
